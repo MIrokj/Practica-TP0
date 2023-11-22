@@ -1,0 +1,164 @@
+ /* Estilo para el fondo de la página */
+ body {
+    background-image: url(Imagenes/thumb-1920-923986.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+/* Estilo para el encabezado gris transparente con altura fija */
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    height: 50px; /* Altura fija */
+}
+
+/* Estilo para el contenido blanco transparente con color luminoso */
+.contenido {
+    background-color: rgba(255, 255, 255, 0.2); /* Ajusta la opacidad según lo luminoso que desees */
+    padding: 20px;
+    min-height: 400px; /* Altura mínima */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo para el pie de página gris con altura fija */
+footer {
+    background-color: rgba(7, 1, 1, 0.9);
+    padding: 20px;
+    height: 30px; /* Altura fija */
+    text-align: center; /* Centra el contenido horizontalmente */
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2rem;
+}
+    
+   
+footer p {
+    color: #f3eeee; /* Cambia este valor al color que desees */
+    
+}
+
+
+
+/* Estilo para la parte izquierda (título, subtítulo y párrafo) */
+.izquierda {
+    width: 50%; /* Ancho de la parte izquierda */
+    text-align: center;
+    margin-left: 5%;
+}
+
+/* Estilo para el formulario en el lado derecho */
+.formulario {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 30%; /* Ancho del formulario */
+    text-align: center;
+    margin-right: 5%; /* Desplazado del margen derecho un 30% */
+    
+}
+
+/* Estilo para las etiquetas de los campos del formulario */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ca2727; /* Línea de color gris claro con 2px de altura */
+    padding: 10px;
+    margin-bottom: 20px; /* Añadir margen inferior para separar los campos */
+    margin-right: 10%; /* Margen derecho del 10% */
+}
+
+/* Estilo para el campo de entrada requerido */
+input[type="text"].required,
+input[type="email"].required,
+input[type="tel"].required,
+textarea.required {
+    border-color: #ccc; /* Cambiar el color de la línea para los campos requeridos */
+    width: 340px;
+}
+
+/* Estilo para el campo de mensaje con una altura determinada */
+textarea {
+    border: 2px solid #ccc; /* Borde de color gris claro con 2px de altura */
+    height: 80px; /* Altura del cuadro de mensaje */
+    width: 340px;
+    margin-right: 20%; /* Margen derecho del 10% */
+}
+
+/* Estilo para el botón de enviar */
+input[type="submit"] {
+    background-color: #3498db; /* Color de fondo azul claro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilo para el título "¿Quieres saber más?" de color azul claro */
+h2 {
+    color: #fefefe;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.nav ul{
+    list-style: none;
+    text-align: center;
+    /* background-color: rgb(5, 4, 2); */
+    background-image: url('img/soccer field background 1003.jpg');
+    padding: 0%;
+    margin: 0%;
+}
+  
+.nav li{
+    display: inline-block;
+    background-color: #050505;
+    
+}  
+
+.nav a{
+    color: white;
+    text-decoration: double;
+    width: 230px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    color: #fefefe;
+    font-size: 30px;
+}
+
+p1{
+    color: #fefefe;
+    font-size: 30px;
+}
+
+p2{
+    color: #fefefe;
+    font-size: 30px;
+}
+
+p3{
+    color: #fefefe;
+    font-size: 30px;
+}
+
+p4{
+    color: #000000;
+    font-size: 30px; 
+}

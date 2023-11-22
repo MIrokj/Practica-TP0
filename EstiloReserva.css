@@ -1,0 +1,185 @@
+
+body { /* Cuerpo principal del contenido, de color blanco, que queda de fondo*/
+    background-color: #545353;
+    margin-left: 1.8cm;
+    margin-right: 1.8cm;
+}
+
+#container {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(14, 12, 11); /*color de fondo*/
+}
+
+header{ 
+    background-color: rgba(22, 156, 22, 0.9); /*color de fondo del encabezado*/
+    height: 200px;  
+    text-align: center;   
+}
+
+footer{
+    background-color: rgba(18, 18, 18, 0.9); /*color de fondo del pie de pagina*/
+    padding: 25px; /* Agregamos un relleno al encabezado */
+    height: 60px;  
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;   
+}
+
+
+header a, footer a { 
+    color: white;  /*color del texto del encabezado y pie de pagina*/
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;   
+}
+
+#contenido {
+    background-color: #fbfbfb;
+    height: 1000px; /* Tamaño del contenido */
+    justify-content: center;
+}
+
+#fulbo{ /*Logo de la pagina*/
+    margin-left: -1.8cm;
+}
+
+#menu {
+    text-align: right; /*menu del encabezado*/
+}
+
+#menu a {
+    margin: 0 20px;
+}
+
+#futbol-publicidad { /* Publicidad futbol retiro*/
+    width: 800px;
+    height: 120px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#futbol-publicidad2{ /* Publicidad futbol comu*/
+    width: 1120px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 5px;
+    border-color: hsla(38, 96%, 51%, 0.956);
+    border-style: ridge;
+}
+
+#futbol-publicidad3{ /* Publicidad */
+    width: 565px;
+    height: 300px;
+    float: right;
+    margin-right: 21.5px;
+    margin-top: -40px;
+}
+
+#contenedor { /* Contenedor que contiene Complejo futbol y comunidad*/
+    display: flex;
+    margin: 0.5cm; /* Margen de 1 cm alrededor de los contenedores */
+    height: 130px;
+}
+#contenedor .izquierdo { /* Complejo futbol*/
+    width: 70%;
+    
+    text-align: center;
+    border: 1px solid rgb(77, 75, 75);
+    margin: 0.1cm; /* Margen de 0.5 cm alrededor del contenedor izquierdo */
+}
+#contenedor .derecho {  /* Comunidad */
+    width: 30%;
+    text-align: center;
+    border: 1px solid rgb(77, 75, 75);
+    margin: 0.1cm; /* Margen de 0.5 cm alrededor del contenedor derecho */
+}
+#logo { /* Logo del Complejo Futbol */
+    width: 170px;
+    height: 170px;
+    float: left;
+    margin-left: 10%;
+    margin-top: -4%;
+}
+#titulo {           /* Titulo del Complejo lado izquierdo contenedor*/
+    font-size: 25px;
+    color: rgba(28, 28, 32, 0.9);  
+    margin-top: 3%;
+    margin-right: 2%;
+}
+#subtitulo {        /*Subtitulo del lado comunidad lado derecho del contenedor*/
+    font-size: 25px;  
+    color: rgba(28, 28, 32, 0.9);  
+}
+#login-link {
+    text-decoration: none;
+    color: blue;
+}
+
+#mensaje1{
+    font-size: 19px;
+}
+
+#servicios {
+    background-color: white; /* Fondo blanco del contenedor de servicios */
+    margin: 10% 10%; /* Margen del 10% en los costados */
+    margin-top: 60px;
+    padding: -10%;
+    text-align: center;
+    color: black; /* Texto en color negro */
+    
+}
+#descripcion {
+    font-size: 22px;
+}
+.resaltar {
+    color: rgb(28, 30, 28); /* Resaltar con color verde */
+    font-size: 20px;
+}
+
+#video-contenido {
+    flex: 1; /* Esto permite que el video tome el espacio restante */
+    margin-right: 7px; /* Espacio entre el video y el contenido del contenedor */
+}
+
+video {
+    width: auto; /* Ajusta el tamaño del video para llenar su contenedor */
+    height: 300px; /* Mantiene la proporción original del video */
+    float: right;
+    margin-right: 15px;
+    margin-top: -40px;
+}
+
+
+#tabs { /* barra de titulo en contenedor de la primera publicidad*/
+    float: left;
+    margin: 0 20px;
+}
+
+.nav ul{
+    list-style: none;
+    text-align: center;
+    background-image: url('img/soccer field background 1003.jpg');
+    padding: 0%;
+    margin: 0%;
+}
+  
+.nav li{
+    display: inline-block;
+    background-color: #050505;  
+}  
+
+.nav a{
+    color: white;
+    text-decoration: double;
+    width: 230px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+}
+

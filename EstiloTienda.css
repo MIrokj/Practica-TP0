@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.nav ul{
+    list-style: none;
+    text-align: center;
+    /* background-color: rgb(5, 4, 2); */
+    background-image: url('img/soccer field background 1003.jpg');
+    padding: 0%;
+    margin: 0%;
+}
+  
+.nav li{
+    display: inline-block;
+    background-color: #050505;
+    
+}  
+
+.nav a{
+    color: white;
+    text-decoration: double;
+    width: 230px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-top: 2rem;
+    
+}
+
+.producto-imagen{
+    max-width: 100%;
+    
+    border-radius: 1rem;
+    
+}
+
+.producto-detalles{
+    background-color: rgb(2, 126, 2);
+    padding: 1rem;
+    border-radius: 1rem;
+    border-top: -1rem;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.producto-titulo{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+
+.product-agregar{
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    padding: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.producto-precio{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.producto-agregar:hover{
+    background-color: black;
+    
+}
+
+body{
+    background-image: url(Imagenes/Cesped.jpg);
+    
+}
+
+header{
+    background-color: white;
+}
+
+/* Estilo para el pie de página gris con altura fija */
+footer {
+    background-color: rgba(7, 1, 1, 0.9);
+    padding: 20px;
+    height: 30px; /* Altura fija */
+    text-align: center; /* Centra el contenido horizontalmente */
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2rem;
+}
+footer p {
+    color: #f3eeee; /* Cambia este valor al color que desees */
+    
+}

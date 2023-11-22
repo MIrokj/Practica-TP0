@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloReserva.css">
+    <title>Reserva</title>
+
+  
+    <!-- Centrar al medio de la pagina 00-->
+    <img id="fulbo" src="Imagenes/Logo FULBO.png" alt="FULBO" width="100" height="70" > 
+    
+    <div class="nav">
+        <ul>
+            <li><a href="Home.html">Inicio</a></li> 
+            <li><a href="Busca-equipo.html">Buscá equipo</a></li>
+            <li><a href="Busca-cancha.html">Buscá cancha</a></li>
+            <li><a href="Tienda.html">Tienda</a></li>
+            <li><a href="Contacto.html">Contacto</a></li> 
+        </ul>  
+    </div>
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            
+            <img id="futbol-publicidad" src="Imagenes/publicidad1.png">
+            
+            <div id="tabs">
+                <a href="ruta_de_novedades.html">Novedades</a>
+                <a href="ruta_de_entrenamiento.html">Entrenamiento</a>
+                <a href="ruta_de_comunidad.html">Comunidad</a>
+                <a href="ruta_del_sitio_web.html">Sitio Web</a>
+
+            </div>
+        </header>
+        <div id="contenido">
+           
+            <img id="futbol-publicidad2" src="Imagenes/publicidad4.png">
+
+            <div id="contenedor">
+                <div class="izquierdo">
+                    <img id="logo" src="Imagenes/logo-complejo.png" alt="Logo de cancha">
+                    <h2 id="titulo">Complejo Fulbo</h2>
+                    <p id="mensaje">Me gusta <span style="color: blue;">Facebook</span> Me gusta <span style="color: blue;">Twitter</span></p>
+                </div>
+                <div class="derecho">
+                    <h2 id="subtitulo">Bienvenido a la Comunidad</h2>
+                    <p id="mensaje">Hoy se juega Fulbo <a id="login-link" href="login.html">¡¡Ingrese Ya!!</a></p>
+                </div>
+            </div>
+
+            <div id="servicios">
+                <h2>Servicios del Club Deportivo</h2>
+                <p id="descripcion">Ofrecemos una amplia variedad de servicios para tu experiencia en nuestro complejo deportivo. Nuestros servicios incluyen:</p>
+                <ul>
+                    <li class="resaltar" > ¡Ven con tus amigos y forma equipos de 5, 6, 7 hasta 8 integrantes!</li>
+                    <li class="resaltar"> Garantizamos un juego de calidad con cancha de pasto sintetico.</li>
+                    <li class="resaltar"> Refréscate después del juego en nuestras modernas instalaciones.</li>
+                    <li class="resaltar"> Disfruta de deliciosas parrilladas después de tu partido.</li>
+                    <li class="resaltar"> Amplios vestuarios para tu comodidad y privacidad.</li>
+                </ul>
+            </div>
+
+
+            <div id="video-contenido">
+                <video id="reservaVideo" autoplay muted controls>
+                    <source src="Imagenes/video1.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+                
+            </div>
+
+            <img id="futbol-publicidad3" src="Imagenes/publicidad3.png">
+
+            <script>
+                const video = document.getElementById("reservaVideo");
+                const toggleSoundButton = document.getElementById("toggleSoundButton");
+                
+                video.addEventListener("click", function() {
+                    if (video.muted) {
+                        video.muted = false;
+                    } else {
+                        video.muted = true;
+                    }
+                });
+
+                
+                const videoreproduccion = document.getElementById("reservaVideo");
+
+                function reproducirVideoCiclicamente() {
+                    videoreproduccion.currentTime = 0; // Reiniciar el video al principio
+                    videoreproduccion.play(); // Iniciar la reproducción
+                }
+
+                videoreproduccion.addEventListener("ended", function() {
+                    // Se ejecutará cuando el video termine de reproducirse
+                    setTimeout(reproducirVideoCiclicamente, 2000); // 2000 milisegundos (2 segundos) de intervalo
+                });
+
+                // Iniciar la reproducción del video
+                reproducirVideoCiclicamente();
+            
+            </script>
+        </div>
+        <footer>          
+            <p>Derechos de autor © 2023 Fulbo</p>
+        </footer>
+    </div>
+</body>
+</html>

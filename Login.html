@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloLogin.css">
+</head>
+<body>
+    <header>
+        <!-- Centrar al medio de la pagina 00-->
+        <img src="Imagenes/Logo FULBO.png" alt="FULBO" width="100" height="70" > 
+    </header>    
+    <div class="nav">
+        <ul>
+            <li><a href="Home.html">Inicio</a></li> 
+            <li><a href="Busca-equipo.html">Buscá equipo</a></li>
+            <li><a href="Busca-cancha.html">Buscá cancha</a></li>
+            <li><a href="Tienda.html">Tienda</a></li>
+            <li><a href="Contacto.html">Contacto</a></li> 
+        </ul>  
+    </div>
+<div class="container">
+    <div class="login-box">
+        <a href="login.html"></a><img src="Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
+   
+        <form id="loginForm">
+            <div>
+                <input type="text" id="usuario" placeholder="Usuario" required style="color: black;" title="">
+                <div id="usuarioError" class="error-message"></div>
+            </div>       
+            <div>
+                <input type="password" id="contrasena" placeholder="Contraseña" required style="color: black; "title="">
+                <div id="contrasenaError" class="error-message"></div>
+            </div>               
+            <p id="recuperacion-pass-link" style="cursor: pointer; text-decoration: underline; text-align: right; color: blue;">¿Te olvidaste de tu contraseña?</p> 
+            <button type="button" onclick="validarFormulario()">Iniciar Sesión</button>            
+            <p id="registro-link">¿Sos nuevo por aquí? <a href="registro.html" style = "color: blue;">Regístrate</a></p>             
+        </form>
+    </div>
+</div>
+
+<script>
+    
+    const logo = document.getElementById('logo');
+    logo.addEventListener('click', function() {
+        window.location.href = 'tupasion.html'; // Redirecciona al usuario a inicio.html
+    });
+
+    const forgotPasswordLink = document.getElementById("recuperacion-pass-link");
+    forgotPasswordLink.addEventListener("click", function () {
+        window.location.href = "recuperacion.pass.html"; // Redirecciona al usuario a recuperar la contraseña
+    });
+
+    const registerlink = document.getElementById("registro-link");
+    registerlink.addEventListener("click", function () {
+        window.location.href = "registro.html"; // Redirecciona al usuario para registro.html
+    });
+
+
+    // Validacion de datos en los campos
+    function validarFormulario() {
+        var usuarioInput = document.getElementById("usuario");
+        var contrasenaInput = document.getElementById("contrasena");
+        var usuarioError = document.getElementById("usuarioError");
+        var contrasenaError = document.getElementById("contrasenaError");
+
+        usuarioError.innerHTML = ""; // Limpiar el mensaje de error
+        contrasenaError.innerHTML = "";
+
+        if (usuarioInput.value.trim() === "") {
+            usuarioInput.classList.add("error");
+            usuarioError.innerHTML = "Campo obligatorio";
+            setTimeout(function() {  // Muestra el error por 5 seg
+                usuarioInput.classList.remove("error");
+                usuarioError.innerHTML = "";
+            }, 5000);
+        } else {
+            usuarioInput.classList.remove("error");
+        }
+
+        if (contrasenaInput.value.trim() === "") {
+            contrasenaInput.classList.add("error");
+            contrasenaError.innerHTML = "Campo obligatorio";
+            setTimeout(function() {
+                contrasenaInput.classList.remove("error");
+                contrasenaError.innerHTML = "";
+            }, 5000);
+        } else {
+            contrasenaInput.classList.remove("error");
+        }
+    }
+
+
+</script>
+
+<footer>
+    <p>Derechos de autor © 2023 Fulbo</p>
+ </footer>
+</body>
+</html>       
