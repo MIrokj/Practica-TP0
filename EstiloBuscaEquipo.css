@@ -62,11 +62,12 @@ h3{
 
 /* Estilo para el pie de página gris con altura fija */
 footer {
+    background: white;
     padding: 20px;
-    height: 30px; /* Altura fija */
+    height: 20px; /* Altura fija */
     text-align: center; /* Centra el contenido horizontalmente */
     font-family: 'Montserrat', sans-serif;
-    margin-top: 20px;   
+    margin-top: 10px;   
 }
 
 footer p {
