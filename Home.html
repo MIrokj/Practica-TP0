@@ -8,7 +8,12 @@
 <body>
     <header>
         <!-- Centrar al medio de la pagina 00-->
-        <img src="Imagenes/Logo FULBO.png" alt="FULBO" width="100" height="70" > 
+        <img src="Imagenes/Logo FULBO.png" alt="FULBO" width="100" height="70">
+        <div class="container-boton ">
+            <a href="https://www.instagram.com/fulbourbanstyle/" target="_blank">
+                <img class="boton" src="Imagenes/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="IG" width="50" height="50">
+            </a>
+        </div>            
     </header>    
         
     <div class="nav">
@@ -21,58 +26,59 @@
         </ul>  
     </div>
    
-    <section>
-       
-        <div class="contenedor1">
-           
-            
-            <h1 class = "mi-titulo1">¿Jugamos?</h1>
-            <h2 class = "mi-titulo2">FULBO</h2>
-            <p>La mejor manera de RESERVAR tu cancha</p>
-            <a class="boton1" href="reserva.html">Reservar</a>
-            <a class="boton2" href="contacto.html" >Contactanos</a>
-        </div>
-
-        
-        <div class="contenedor2">
-            <div class="miimg">
-                <img src="Imagenes/img1.png" alt="Imagen 1">
-                <a class="boton-sesion" href="login.html">Inicio Sesion</a>
+    <main>
+        <section>      
+            <div class="contenedorTexto">
+                            
+                <h1 class = "titulo1">¿Jugamos?</h1>
+                <h2 class = "titulo2">FULBO</h2>
+                <h3 class= "frase">La mejor manera de RESERVAR tu cancha</h3>
+                <a class="boton1" href="Reserva.html">RESERVAR</a>
+                <a class="boton2" href="Contacto.html" >CONTACTO</a>
             </div>
-            <div class="miimg">
-                <img src="Imagenes/img2.png" alt="Imagen 2">
-                <a class="boton-sesion" href="login.html">Inicio Sesion</a>
-            </div>
-            <div class="miimg">
-                <img src="Imagenes/img3.png" alt="Imagen 3">
-                <a class="boton-sesion" href="login.html">Inicio Sesion</a>
-            </div>    
-            <div class="miimg">
-                <img src="Imagenes/img4.png" alt="Imagen 4">
-                <a class="boton-sesion" href="login.html">Inicio Sesion</a>
-            </div>     
-                                   
-        </div>
-
-        <script> 
-            let indice = 0;
                 
-                function mostrarimg() {
-                    let i;
-                    let imagenes = document.getElementsByClassName("miimg");
-                    for (i = 0; i < imagenes.length; i++) {
-                        imagenes[i].style.display = "none";
+            <div class="contenedorImagen">
+                <div class="imagen">
+                    <img src="Imagenes/img1.png" alt="Imagen 1">
+                    <a class="boton-sesion" href="login.html">Inicio Sesion</a>
+                </div>
+                <div class="imagen">
+                    <img src="Imagenes/img2.png" alt="Imagen 2">
+                    <a class="boton-sesion" href="login.html">Inicio Sesion</a>
+                </div>
+                <div class="imagen">
+                    <img src="Imagenes/img3.png" alt="Imagen 3">
+                    <a class="boton-sesion" href="login.html">Inicio Sesion</a>
+                </div>    
+                <div class="imagen">
+                    <img src="Imagenes/img4.png" alt="Imagen 4">
+                    <a class="boton-sesion" href="login.html">Inicio Sesion</a>
+                </div>                                         
+            </div>
+                    
+            <script> 
+                let indice = 0;
+                    
+                    function mostrarimg() {
+                        let i;
+                        let imagenes = document.getElementsByClassName("imagen");
+                        for (i = 0; i < imagenes.length; i++) {
+                            imagenes[i].style.display = "none";
+                        }
+                        indice++;
+                        if (indice > imagenes.length) {
+                            indice = 1;
+                        }
+                        imagenes[indice - 1].style.display = "block";
+                        setTimeout(mostrarimg, 5000); // Cambiar cada 5 segundos
                     }
-                    indice++;
-                    if (indice > imagenes.length) {
-                        indice = 1;
-                    }
-                    imagenes[indice - 1].style.display = "block";
-                    setTimeout(mostrarimg, 5000); // Cambiar cada 5 segundos
-                }
-                mostrarimg();
-        </script>
-    </section>
-
+                    mostrarimg();
+            </script>
+        </section>
+    </main>
+    <footer>
+        <p>Derechos de autor © 2023 Fulbo</p>
+    </footer>
 </body>
+
 </html>    

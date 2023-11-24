@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="EstiloContacto.css">
+    <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="ValidacionContacto.js" defer></script>
     <title>Pagina de Contacto</title>
 </head>
 <body>
@@ -25,30 +29,44 @@
         </div>
 
     <div class="contenido">
-        <div class="izquierda">
+        <div class="informacion">
             <h2>Contacto</h2>
             <h3>Te tiramos la posta</h3>
-            <p1>Si querés más información sobre nuestros servicios o tenés alguna duda, nuestro personal te contactará a la brevedad.</p1>
-            <p2>Contáctanos via WhatsApp +5411459322</p2>
-            <p3>vivaFutbool@gmail.com</p3>
+            <p class="p1">Si querés más información sobre nuestros servicios o tenés alguna duda, nuestro personal te contactará a la brevedad.</p>
+            <p class="p2"> 
+                    <i class='bx bxl-whatsapp' style='color:#fbf4f4'></i>        
+                    <a href="https://wa.me/5411459322" style='color:#fbf4f4' target="_blank">Whatsapp: +54-11459322</a>
+            </p>
+            <p class="p3">
+                    <i class='bx bxs-envelope' style='color:#fbf4f4'></i>
+                    <a href="futbo@gmail.com" style='color:#fbf4f4'>Correo: fulbo@gmail.com</a>
+            </p>
 
         </div>
-        <div class="formulario">
+        <div class="formularioConteiner">
             <p4>¿Querés saber más?</p4>
-            <form>
+
+            <form id="formulario" onsubmit="return validarFormulario()">
                 <label for="nombre">Nombre<sup style="color: red;">*</sup></label>
-                <input type="text" id="nombre" name="nombre" class="required">
+                <div contenteditable="true" id="nombre" class="required" placeholder="Ingresa tu nombre..."></div>
+                <div id="mensajeNombre" class="mensaje-validacion"></div>
+    
                 <label for="apellido">Apellido<sup style="color: red;">*</sup></label>
-                <input type="text" id="apellido" name="apellido" class="required">
+                <div contenteditable="true" id="apellido" class="required" placeholder="Ingresa tu apellido..."></div>
+                <div id="mensajeApellido" class="mensaje-validacion"></div>
+    
                 <label for="email">Correo Electrónico<sup style="color: red;">*</sup></label>
-                <input type="email" id="email" name="email" class="required">
-                
+                <div contenteditable="true" id="email" class="required" placeholder="Ingresa tu correo..."></div>
+                <div id="mensajeEmail" class="mensaje-validacion"></div>
+    
                 <label for="telefono">Teléfono<sup style="color: red;">*</sup></label>
-                <input type="tel" id="telefono" name="telefono" class="required">
-                
+                <div contenteditable="true" id="telefono" class="required" placeholder="Ingresa tu teléfono..."></div>
+                <div id="mensajeTelefono" class="mensaje-validacion"></div>
+    
                 <label for="mensaje">Mensaje<sup style="color: red;">*</sup></label>
                 <textarea id="mensaje" name="mensaje" class="required" rows="4"></textarea>
-                <input type="submit" value="Enviar">
+              
+                <button type="submit">Enviar</button>        
             </form>
         </div>
     </div>

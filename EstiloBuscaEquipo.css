@@ -55,7 +55,7 @@ h3{
 
 /* Estilo para el pie de página gris con altura fija */
 footer {
-    background-color: rgba(7, 1, 1, 0.9);
+    
     padding: 20px;
     height: 10px; /* Altura fija */
     text-align: center; /* Centra el contenido horizontalmente */
@@ -63,14 +63,8 @@ footer {
 }
 
 footer p {
-    color: #f3eeee; /* Cambia este valor al color que desees */
-    
+    color: #050505; /* Cambia este valor al color que desees */ 
 }
-
-
-
-
-
 
 /* Resto de tu código CSS */
 
@@ -92,16 +86,5 @@ form label {
     margin-bottom: 5px;
     font-weight: bold;
 }
-
-form input[type="text"],
-form input[type="number"],
-form input[type="email"],
-form input[type="tel"] 
-    width: 100%;
-    padding: 10px;
-    margin-bottom : 15px;
-    border: 1
-
-
 
     

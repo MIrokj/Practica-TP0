@@ -1,10 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
-
 
 .nav ul{
     list-style: none;
@@ -17,8 +15,7 @@
   
 .nav li{
     display: inline-block;
-    background-color: #050505;
-    
+    background-color: #050505;   
 }  
 
 .nav a{
@@ -36,15 +33,12 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 15px;
-    margin-top: 2rem;
-    
+    margin-top: 2rem;    
 }
 
 .producto-imagen{
-    max-width: 100%;
-    
-    border-radius: 1rem;
-    
+    max-width: 100%;  
+    border-radius: 1rem;  
 }
 
 .producto-detalles{
