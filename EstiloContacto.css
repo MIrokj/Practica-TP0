@@ -84,6 +84,18 @@ footer {
     margin-top: 1rem;
 }
 
+/* Estilos responsivos para el botón flotante */
+.container-boton {
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 20px;
+    padding: 10px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
 
 .nav ul{
     list-style: none;
@@ -123,7 +135,7 @@ h3, p, p1, p2, p3 {
     margin-right: 5px; /* Añade un espacio entre el ícono y el texto */
 }
 p4{ /* Titulo del formulario ¿Queres saber mas?*/
-    color: rgb(4, 4, 79, 0,3);
+    color: black;
     font-size: 25px;
 }
 
@@ -140,3 +152,4 @@ h2 {
     font-size: 12px;
     margin-top: 5px;
 }
+

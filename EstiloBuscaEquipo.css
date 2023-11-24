@@ -1,6 +1,5 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
     font-family: Arial, sans-serif;
     background-image: url(Imagenes/FOOTBALL-RIVALS-FRIENDS-B2.jpg);
     background-size: cover;
@@ -10,6 +9,7 @@ body {
 
 header{
     background-color: #ffffff;
+    margin: 0%;
     
 }
 
@@ -32,8 +32,6 @@ h3{
     text-align: center;
     /* background-color: rgb(5, 4, 2); */
     background-image: url('Imagenes/img5.png');
-    padding: 0%;
-    margin: 0%;
 }
   
 .nav li{
@@ -60,10 +58,23 @@ footer {
     height: 10px; /* Altura fija */
     text-align: center; /* Centra el contenido horizontalmente */
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 footer p {
     color: #050505; /* Cambia este valor al color que desees */ 
+}
+
+/* Estilos responsivos para el botón flotante */
+.container-boton {
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 20px;
+    padding: 10px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
 }
 
 /* Resto de tu código CSS */
@@ -78,6 +89,7 @@ form {
     max-width: 500px; /* Ancho máximo del formulario */
     margin: 0 auto; /* Centrar horizontalmente */
     margin-top: 50px; /* Espacio superior para centrar verticalmente */
+    margin-bottom: 40px;
 }
 
 /* Estilo para el formulario etiquetas y entradas */
