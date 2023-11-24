@@ -10,7 +10,9 @@
 <body>
     <header>
         <!-- Centrar al medio de la pagina 00-->
-        <img src="Imagenes/Logo FULBO.png" alt="FULBO" width="100" height="70">
+         <img src="Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
+    
+
         <div class="container-boton ">
             <a href="https://www.instagram.com/fulbourbanstyle/" target="_blank">
                 <img class="boton" src="Imagenes/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="IG" width="50" height="50">
@@ -29,7 +31,7 @@
     </div>
     <div class="container">
         <div class="login-box">
-            <a href="Login.html"></a><img src="Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
+            <img src="Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo2">
     
             <form id="loginForm">
                 <div>
@@ -51,6 +53,10 @@
         
         const logo = document.getElementById('logo');
         logo.addEventListener('click', function() {
+            window.location.href = 'Home.html'; // Redirecciona al usuario a inicio.html
+        });
+        const logo2 = document.getElementById('logo2');
+        logo2.addEventListener('click', function() {
             window.location.href = 'Home.html'; // Redirecciona al usuario a inicio.html
         });
 

@@ -9,8 +9,8 @@ body {
 
 header{
     background-color: #ffffff;
-    margin: 0%;
-    
+    margin: 0%; 
+    height: 40%;
 }
 
 h2{
@@ -30,7 +30,8 @@ h3{
 .nav ul{
     list-style: none;
     text-align: center;
-    /* background-color: rgb(5, 4, 2); */
+    padding: 0;
+    margin: 0;
     background-image: url('Imagenes/img5.png');
 }
   
@@ -51,14 +52,21 @@ h3{
     font-family:'Montserrat', sans-serif;
 }
 
+#logo{
+    width: 100px;
+    height: 70px;
+    background-size: cover;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 /* Estilo para el pie de página gris con altura fija */
 footer {
-    
     padding: 20px;
-    height: 10px; /* Altura fija */
+    height: 30px; /* Altura fija */
     text-align: center; /* Centra el contenido horizontalmente */
     font-family: 'Montserrat', sans-serif;
-    
+    margin-top: 20px;   
 }
 
 footer p {
@@ -77,26 +85,36 @@ footer p {
     animation: efecto 1.2s infinite;
 }
 
-/* Resto de tu código CSS */
 
 /* Estilo para el formulario */
 form {
     background-color: rgb(255, 255, 255);
     opacity: 0.95;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px; /* Ancho máximo del formulario */
+    max-width: 400px; /* Ancho máximo del formulario */
     margin: 0 auto; /* Centrar horizontalmente */
     margin-top: 50px; /* Espacio superior para centrar verticalmente */
     margin-bottom: 40px;
+
+    width: 100%; 
+    text-align: left;
 }
 
-/* Estilo para el formulario etiquetas y entradas */
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+form div[contenteditable="true"] {
+    border: 1px solid #757474; /* Borde gris de 1 píxel */
+    padding: 10px; /* Añadir un poco de espacio interno para mejorar la apariencia */
+    margin-bottom: 15px; /* Espacio inferior entre los campos del formulario */
+    width: 100%; /* Ancho del 100% para ocupar todo el contenedor */
+    box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
 }
+
+.mensaje-validacion {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 
     

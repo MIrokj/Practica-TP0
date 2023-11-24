@@ -40,6 +40,15 @@ p{
     text-align: center;
 }
 
+/*Logo de la pagina que redireccionar a home cuando hacen clip*/
+#logo{
+    width: 100px;
+    height: 70px;
+    background-size: cover;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 /* Estilo para el pie de página gris con altura fija */
 footer {
     background-color: rgba(7, 1, 1, 0.9);

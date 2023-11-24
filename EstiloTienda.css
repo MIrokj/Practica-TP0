@@ -29,6 +29,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/*Logo de la pagina que redireccionar a home cuando hacen clip*/
+#logo{
+    width: 100px;
+    height: 70px;
+    background-size: cover;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 .contenedor-productos{
     display: grid;
     grid-template-columns: repeat(3,1fr);

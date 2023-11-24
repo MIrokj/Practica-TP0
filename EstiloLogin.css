@@ -36,12 +36,21 @@ footer p {
 
 
 #logo {                 /* id = 'logo'*/
-    width: 150px;       /* Tamaño del logo */
+    width: 100px;       /* Tamaño del logo */
     margin-bottom: 20px;
     background-color:  transparent ; /* falta hacerlo trasparente el fondo logo*/
     border-radius: 15px;
     padding: 5px;
-   
+    cursor: pointer;
+}
+
+#logo2 {                 /* id = 'logo'*/
+    width: 100px;       /* Tamaño del logo */
+    margin-bottom: 10px;
+    background-color:  transparent ; /* falta hacerlo trasparente el fondo logo*/
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .login-box {

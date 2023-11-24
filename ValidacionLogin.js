@@ -4,6 +4,7 @@
 var usua = "ramiro";
 var cont = "ramiro";
 function validarFormulario() {
+    // Obtener los valores de los campos
     var usuarioEntrada = document.getElementById("usuario");
     var contrasenaEntrada = document.getElementById("contrasena");
     var usuarioError = document.getElementById("usuarioError");

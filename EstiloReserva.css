@@ -6,26 +6,29 @@ body { /* Cuerpo principal del contenido, de color blanco, que queda de fondo*/
 }
 
 #container {
-    width: 100%;
-    margin: auto;
-    background-color: rgb(14, 12, 11); /*color de fondo*/
+    width: 100%; /* Hace que el contenedor sea del 100% del ancho del viewport */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    background-color: rgb(14, 12, 11); /* Color de fondo */
+    padding: 1px; /* Agregamos un relleno al contenedor */
+    
 }
 
 header{ 
     background-color: rgba(22, 156, 22, 0.9); /*color de fondo del encabezado*/
-    height: 200px;  
-    text-align: center;   
+    height: 100px;  
+    text-align: center; 
+    margin: 0%;   
 }
 
 footer{
     background-color: rgba(18, 18, 18, 0.9); /*color de fondo del pie de pagina*/
-    padding: 25px; /* Agregamos un relleno al encabezado */
+    padding: 5px; /* Agregamos un relleno al encabezado */
     height: 60px;  
     color: white;
     font-size: 20px;
     text-align: center;
     text-decoration: none;
-    padding: 10px;   
+     
 }
 
 
@@ -37,9 +40,10 @@ header a, footer a {
 }
 
 #contenido {
-    background-color: #fbfbfb;
-    height: 1000px; /* Tamaño del contenido */
+    background-color: white;
+    height: 1100px; /* Tamaño del contenido */
     justify-content: center;
+    justify-items: center;
 }
 
 #fulbo{ /*Logo de la pagina*/
@@ -54,56 +58,77 @@ header a, footer a {
     margin: 0 20px;
 }
 
-#futbol-publicidad { /* Publicidad futbol retiro*/
-    max-width:800px;
-    height: auto;
-   
-    margin-left: 1.8cm;
-    margin-right: 1.8cm;
+#futbol-publicidad { /* Publicidad futbol retiro*/  
+    max-width: 55%; /* Hace que la imagen no sea más ancha que el contenedor padre */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción original */
+    
+    margin-top: 1cm; 
+    margin-bottom: 1cm; 
+    margin-left: 1.8cm; 
+    margin-right: 1.8cm; 
 }
 
-#futbol-publicidad2{ /* Publicidad futbol comu*/
-    width: 1120px;
-    height: 100px;
-    margin-left: 20px;
-    margin-top: 5px;
+#futbol-publicidad2 {
+    max-width: 96%; /* Hace que la imagen no sea más ancha que el contenedor padre */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción original */
+   
+    margin: auto auto; /* Márgenes superior e inferior de 1cm y auto en el margen izquierdo y derecho */
+    display: block; /* Esto ayuda a centrar la imagen automáticamente */
     border-color: hsla(38, 96%, 51%, 0.956);
     border-style: ridge;
 }
 
-#futbol-publicidad3{ /* Publicidad */
-    width: 565px;
-    height: 300px;
-    float: right;
-    margin-right: 21.5px;
-    margin-top: -40px;
+#contenedor {
+    display: flex;
+    
+    height: auto; /* Se ajusta automáticamente según el contenido */
+    margin-top: 1cm; 
+    margin-bottom: 1cm; 
 }
 
-#contenedor { /* Contenedor que contiene Complejo futbol y comunidad*/
+#contenedor .izquierdo {
+    flex: 1; /* Toma el 50% del ancho del contenedor */
+    text-align: center;
+    border: 1px solid rgb(77, 75, 75);
+    margin: 0 0.5cm; /* Margen de 0.5 cm a cada lado del contenedor izquierdo */
+}
+
+#contenedor .derecho {
+    flex: 1; /* Toma el 50% del ancho del contenedor */
+    text-align: center;
+    border: 1px solid rgb(77, 75, 75);
+    margin: 0 0.5cm; /* Margen de 0.5 cm a cada lado del contenedor derecho */
     display: flex;
-    margin: 0.5cm; /* Margen de 1 cm alrededor de los contenedores */
-    height: 130px;
+    flex-direction: column;
+    justify-content: center;
 }
-#contenedor .izquierdo { /* Complejo futbol*/
-    width: 70%;
-    
-    text-align: center;
-    border: 1px solid rgb(77, 75, 75);
-    margin: 0.1cm; /* Margen de 0.5 cm alrededor del contenedor izquierdo */
+
+#contenedor img,
+#contenedor h2,
+#contenedor p {
+    margin: 10px; /* Ajusta el espacio entre los elementos según sea necesario */
 }
-#contenedor .derecho {  /* Comunidad */
-    width: 30%;
-    text-align: center;
-    border: 1px solid rgb(77, 75, 75);
-    margin: 0.1cm; /* Margen de 0.5 cm alrededor del contenedor derecho */
+
+/* Resto del CSS permanece igual */
+
+#logoComplejo{
+    width: 100px;
+    height: 70px;
+    background-size: cover;
+    border-radius: 15px;
+    cursor: pointer;
 }
-#logo { /* Logo del Complejo Futbol */
-    width: 170px;
-    height: 170px;
-    float: left;
-    margin-left: 10%;
-    margin-top: -4%;
+
+
+/*Logo de la pagina que redireccionar a home cuando hacen clip*/
+#logo{
+    width: 100px;
+    height: 70px;
+    background-size: cover;
+    border-radius: 15px;
+    cursor: pointer;
 }
+
 #titulo {           /* Titulo del Complejo lado izquierdo contenedor*/
     font-size: 25px;
     color: rgba(28, 28, 32, 0.9);  
@@ -139,24 +164,37 @@ header a, footer a {
     color: rgb(28, 30, 28); /* Resaltar con color verde */
     font-size: 20px;
 }
-
-#video-contenido {
-    flex: 1; /* Esto permite que el video tome el espacio restante */
-    margin-right: 7px; /* Espacio entre el video y el contenido del contenedor */
+#contenedorVideo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se coloquen uno debajo del otro en pantallas más pequeñas */
+    margin-top: -1cm; 
+    margin-bottom: -1cm; 
+    margin-left: 1.5%;
 }
 
-video {
-    width: auto; /* Ajusta el tamaño del video para llenar su contenedor */
-    height: 300px; /* Mantiene la proporción original del video */
-    float: right;
-    margin-right: 15px;
-    margin-top: -40px;
+#video-Publicidad,
+#publicidad3 {
+    flex: 1; /* Toma el 50% del ancho del contenedor */
+    max-width: 50%; /* Garantiza que no ocupe más del 50% del ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    margin-top: -1cm; 
+    margin-bottom: -1cm; 
+    margin-right: 1.5%;
 }
+
+#reservaVideo,
+#futbol-publicidad3 {
+    width: 100%; /* Ajusta el ancho del video/imagen al 100% del contenedor */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
+}
+
+
 
 
 #tabs { /* barra de titulo en contenedor de la primera publicidad*/
     float: left;
     margin: 0 20px;
+    background: #050505;
 }
 
 .nav ul{

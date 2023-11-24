@@ -14,10 +14,9 @@ body {
 }
 
 /* Estilo para el encabezado gris transparente con altura fija */
-header {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    height: 50px; /* Altura fija */
+header{
+    background-color: #ffffff;
+    margin: 0%; 
 }
 /* Estilos para el contenedor principal */
 .contenido {
@@ -41,8 +40,8 @@ header {
 .formularioConteiner {
     max-width: 400px; /* Ancho máximo del contenedor del formulario */
     width: 100%; 
-    margin-right: 5%;
-    text-align: center;
+    
+    text-align: left;
     background-color: rgb(255, 255, 255);   /* Fondo semi-transparente blanco para el formulario */
     padding: 20px;
     border-radius: 10px;
@@ -73,6 +72,13 @@ form div[contenteditable="true"] {
     width: 100%; /* Ancho del 100% para ocupar todo el contenedor */
     box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
 }
+
+.mensaje-validacion {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 
 /* Estilos para el pie de página */
 footer {
@@ -121,6 +127,15 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*Logo de la pagina que redireccionar a home cuando hacen clip*/
+#logo{
+    width: 100px;
+    height: 70px;
+    background-size: cover;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 h3, p, p1, p2, p3 {
     color: #fefefe;
     font-size: 20px;
@@ -147,9 +162,4 @@ h2 {
     margin-bottom: 40px;
 }
 
-.mensaje-validacion {
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
-}
 

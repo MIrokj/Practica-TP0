@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="EstiloBuscaEquipo.css">
+    <script src="ValidacionBuscaEquipo.js" defer></script>
 </head>
 <body>
     <header>
-        <!-- Centrar al medio de la pagina 00-->
-        <img src="Imagenes/Logo FULBO.png" alt="FULBO" width="100" height="70">
+        <!-- Logo de la pagina 00-->
+        <img src="Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
         
+        <!-- Icono de la red social -->
         <div class="container-boton ">
             <a href="https://www.instagram.com/fulbourbanstyle/" target="_blank">
                 <img class="boton" src="Imagenes/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="IG" width="50" height="50">
@@ -30,30 +32,45 @@
     <h2>¡Te tiramos un centro! </h2>
     <h3>Si te falta equipo, nosotros lo conseguimos. ¡Inscribite!</h3>
 
-    <form action="procesar_registro.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+    
+    <form id="formulario" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre<sup style="color: red;">*</sup></label>
+        <div contenteditable="true" id="nombre" class="required" placeholder="Ingresa tu nombre..."></div>
+        <div id="mensajeNombre" class="mensaje-validacion"></div>
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required>
+        <label for="apellido">Apellido<sup style="color: red;">*</sup></label>
+        <div contenteditable="true" id="apellido" class="required" placeholder="Ingresa tu apellido..."></div>
+        <div id="mensajeApellido" class="mensaje-validacion"></div>
 
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad" required>
+        <label for="edad">Edad<sup style="color: red;">*</sup></label>
+        <div contenteditable="true" id="edad" class="required" placeholder="Ingresa tu edad..."></div>
+        <div id="mensajeEdad" class="mensaje-validacion"></div>
 
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" name="correo" required>
+        <label for="correo">Correo Electrónico<sup style="color: red;">*</sup></label>
+        <div contenteditable="true" id="correo" class="required" placeholder="Ingresa tu correo..."></div>
+        <div id="mensajeEmail" class="mensaje-validacion"></div>
 
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required>
+        <label for="telefono">Teléfono<sup style="color: red;">*</sup></label>
+        <div contenteditable="true" id="telefono" class="required" placeholder="Ingresa tu teléfono..."></div>
+        <div id="mensajeTelefono" class="mensaje-validacion"></div>
 
-        <label for="barrio">Barrio:</label>
-        <input type="text" id="barrio" name="barrio" required>
+        <label for="barrio">Barrio<sup style="color: red;">*</sup></label>
+        <div contenteditable="true" id="barrio" class="required" placeholder="Ingresa tu barrio..."></div>
+        <div id="mensajeBarrio" class="mensaje-validacion"></div>
 
-        <label for="localidad">Localidad:</label>
-        <input type="text" id="localidad" name="localidad" required>
+        <label for="localidad">Localidad<sup style="color: red;">*</sup></label>
+        <div contenteditable="true" id="localidad" class="required" placeholder="Ingresa tu localidad..."></div>
+        <div id="mensajeLocalidad" class="mensaje-validacion"></div>
 
-        <input type="submit" value="Registrarse">
+        <button type="submit">Enviar</button>        
     </form>
+
+    <script>
+        const logo = document.getElementById('logo');
+        logo.addEventListener('click', function() {
+        window.location.href = 'Home.html'; // Redirecciona al usuario a inicio.html
+        });
+    </script>
     <footer>
         <p>Derechos de autor © 2023 Fulbo</p>
     </footer>
