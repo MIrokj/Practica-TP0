@@ -1,3 +1,4 @@
+/* Validacion de datos*/
 function validarFormulario() {
     var nombre = document.getElementById('nombre').innerText.trim();
     var apellido = document.getElementById('apellido').innerText.trim();

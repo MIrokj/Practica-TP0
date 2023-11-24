@@ -1,5 +1,6 @@
+/* Validacion de datos*/
 
-// Valores de usuario y contraseña 
+// Valores de usuario y contraseña para iniciar sesion
 var usua = "ramiro";
 var cont = "ramiro";
 function validarFormulario() {
