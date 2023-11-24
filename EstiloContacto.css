@@ -84,7 +84,7 @@ footer {
     margin-top: 1rem;
 }
 
-/* Estilos responsivos para el botón flotante */
+/* Estilos para el botón flotante */
 .container-boton {
     position: fixed;
     z-index: 999;
@@ -96,7 +96,7 @@ footer {
     animation: efecto 1.2s infinite;
 }
 
-
+/* Estilos para panel de navegacion */
 .nav ul{
     list-style: none;
     text-align: center;

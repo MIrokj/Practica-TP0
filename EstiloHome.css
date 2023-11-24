@@ -159,7 +159,7 @@ p{
     background-color: rgb(61, 76, 61); /* Cambia el color al pasar el cursor */
 }
 
-/* Estilos responsivos para pantallas pequeñas */
+/* Estilos  para diferente tamaño de pantallas */
 @media only screen and (max-width: 1200px) {
     body{
         margin-left: 20px auto;
