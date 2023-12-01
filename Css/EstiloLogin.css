@@ -1,26 +1,26 @@
 body {
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    
     background-image: url('https://i.ibb.co/GxDZW95/2381abs8-1.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    
 }
 
 /* Estilo HEADER encabezado gris con altura fija */
 header{
     background: white;
     margin: 0%; 
+    height: 74px;
 }
 
     /*Logo de la pagina que redireccionar a home */
-    #logo {                
-        width: 100px;       /* Tamaño del logo */
-        margin-bottom: 20px;
-        background-color:  transparent ; /* falta hacerlo trasparente el fondo logo*/
+    #logo{
+        width: 100px;
+        height: 70px;
+        background-size: cover;
         border-radius: 15px;
-        padding: 5px;
         cursor: pointer;
     }
 
@@ -50,7 +50,7 @@ header{
 .nav li{
     display: inline-block;
     background-color: #050505;
-    margin-top: -5%;
+    margin-top: 0px;
 }  
 
 .nav a{
@@ -66,13 +66,14 @@ header{
 /*Contenido*/
 .container {
     width: 300px;  /* Tamaño del contenedor*/
-    height: 100vh;
+    height: 100px;
     display: flex;
     flex-direction: column;   
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: -25px;
+    margin-top: 210px;
+   
 }
 
 .login-box {
