@@ -1,38 +1,48 @@
 body {
     margin: 0%;
     font-family: Arial, sans-serif;
-    background-image: url(Imagenes/FOOTBALL-RIVALS-FRIENDS-B2.jpg);
+    background-image: url(../Imagenes/FOOTBALL-RIVALS-FRIENDS-B2.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
+/* Estilo HEADER encabezado con altura fija */
 header{
     background-color: #ffffff;
     margin: 0%; 
     height: 40%;
 }
 
-h2{
-    color: #000000;
-    text-align: center;
-    font-size: 30;
-    
-}
+    /*Logo de la pagina que redireccionar a home */
+    #logo{
+        width: 100px;
+        height: 70px;
+        background-size: cover;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+        
+    /* Estilos para el botón flotante */
+    .container-boton {
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 15px;
+        right: 20px;
+        padding: 10px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+    }
 
-h3{
-    color: #000000;
-    text-align: center;
-}
 
-
-
+/* Estilos para la barra de navegación */
 .nav ul{
     list-style: none;
     text-align: center;
     padding: 0;
     margin: 0;
-    background-image: url('Imagenes/img5.png');
+    background-image: url('../Imagenes/img5.png');
 }
   
 .nav li{
@@ -52,41 +62,9 @@ h3{
     font-family:'Montserrat', sans-serif;
 }
 
-#logo{
-    width: 100px;
-    height: 70px;
-    background-size: cover;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-/* Estilo para el pie de página gris con altura fija */
-footer {
-    background: white;
-    padding: 20px;
-    height: 20px; /* Altura fija */
-    text-align: center; /* Centra el contenido horizontalmente */
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 10px;   
-}
-
-footer p {
-    color: #050505; /* Cambia este valor al color que desees */ 
-}
-
-/* Estilos responsivos para el botón flotante */
-.container-boton {
-    position: fixed;
-    z-index: 999;
-    border-radius: 50%;
-    bottom: 15px;
-    right: 20px;
-    padding: 10px;
-    transition: ease 0.3s;
-    animation: efecto 1.2s infinite;
-}
 
 
+/*Contenido*/
 /* Estilo para el formulario */
 form {
     background-color: rgb(255, 255, 255);
@@ -111,11 +89,43 @@ form div[contenteditable="true"] {
     box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
 }
 
-.mensaje-validacion {
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
+    .mensaje-validacion {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+
+    h2{
+        color: #000000;
+        text-align: center;
+        font-size: 30;
+        
+    }
+
+    h3{
+        color: #000000;
+        text-align: center;
+    }
+    
+    
+
+/* Estilo FOOTER el pie de página con altura fija */
+footer {
+    background:black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    bottom: 0;
+    margin: 1px;
+    margin-top: 10%; 
+    
 }
 
 
-    
+footer p {
+    color: white; /* Cambia este valor al color que desees */
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}

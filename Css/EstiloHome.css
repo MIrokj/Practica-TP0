@@ -5,30 +5,60 @@ body {
     background: rgb(51, 50, 50);
 }
 
+/* Estilo HEADER encabezado con altura fija */
 header{
     background: white;
     margin: 0%; 
 }
 
-/* Estilo para el pie de página con altura fija */
-footer {
-    background:white;
-    text-align: center;
+    /*Logo de la pagina que redireccionar a home*/
+    #logo{
+        width: 100px;
+        height: 70px;
+        background-size: cover;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    /* Estilos para el botón flotante de redes*/
+    .container-boton {
     position: fixed;
-    width: 100%;
-    height: 7%;
-    bottom: 0;
-    margin: 1px;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 20px;
+    padding: 10px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+    }
+
+/* Estilos para la barra de navegación */
+.nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0%;
+    background-image: url('img/soccer field background 1003.jpg');
 }
 
-/*Logo de la pagina que redireccionar a home cuando hacen clip*/
-#logo{
-    width: 100px;
-    height: 70px;
-    background-size: cover;
-    border-radius: 15px;
-    cursor: pointer;
+.nav li {
+    display: inline-block;
+    background-color: #050505;
+    margin-bottom: 5px;
 }
+
+.nav a {
+    color: white;
+    text-decoration: double;
+    width: 230px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* MAIN */
 
 /* Estilos generales para la sección principal del contenido */
 section {
@@ -82,98 +112,57 @@ section {
     height: auto;
 }
 
-/* Estilos para la barra de navegación */
-.nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0%;
-    background-image: url('img/soccer field background 1003.jpg');
-}
 
-.nav li {
-    display: inline-block;
-    background-color: #050505;
-    margin-bottom: 5px;
-}
+    /* Estilos para los títulos */
+    .titulo1{
+        font-size: 3em;
+        text-align: left;
+        left: 30%;
+        margin: -1%;
+    }
+    .titulo2{
+        font-size: 5em;
+        margin: 2%;
+    }
 
-.nav a {
-    color: white;
-    text-decoration: double;
-    width: 230px;
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
+    /* Estilos para la frase y párrafo */
+    .frase{
+        color: rgb(255, 255, 255);
+        margin-bottom: 45px; 
+        font-size: 1.1rem;
+    }
 
-/* Estilos para el botón flotante de redes*/
-.container-boton {
-    position: fixed;
-    z-index: 999;
-    border-radius: 50%;
-    bottom: 15px;
-    right: 20px;
-    padding: 10px;
-    transition: ease 0.3s;
-    animation: efecto 1.2s infinite;
-}
+    
 
-/* Estilos para los títulos */
-.titulo1{
-    font-size: 3em;
-    text-align: left;
-    left: 30%;
-    margin: -1%;
-}
-.titulo2{
-    font-size: 5em;
-    margin: 2%;
-}
+    /* Estilos para los botones */
+    .boton1 {
+        background-color: yellow;
+        color: black;
+        padding: 10px 20px; 
+    }
+    .boton2{
+        background-color: hsl(0, 3%, 23%);
+        color: antiquewhite;
+        padding: 10px 20px;
+    }
 
-/* Estilos para la frase y párrafo */
-.frase{
-    color: rgb(255, 255, 255);
-    margin-bottom: 45px; 
-    font-size: 1.1rem;
-}
+    /* Estilos para el botón de inicio de sesión */
+    .boton-sesion {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: transparent; /* Fondo transparente */
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Efecto de transición al pasar el cursor */
+        font-size: 1.2em;
+    }
 
-p{
-    color: black;
-    margin-bottom: 45px; 
-    font-size: 1.2rem;
-}
-
-/* Estilos para los botones */
-.boton1 {
-    background-color: yellow;
-    color: black;
-    padding: 10px 20px; 
-}
-.boton2{
-    background-color: hsl(0, 3%, 23%);
-    color: antiquewhite;
-    padding: 10px 20px;
-}
-
-/* Estilos para el botón de inicio de sesión */
-.boton-sesion {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: transparent; /* Fondo transparente */
-    border: none;
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el cursor */
-    font-size: 1.2em;
-}
-
-.boton-sesion:hover {
-    background-color: green; /* Cambia el color al pasar el cursor */
-}
+    .boton-sesion:hover {
+        background-color: green; /* Cambia el color al pasar el cursor */
+    }
 
 /* Estilos  para diferente tamaño de pantallas */
 @media only screen and (max-width: 1200px) {
@@ -230,5 +219,22 @@ p{
         z-index: 4; /* Establecer un índice z más alto que contenedorTexto */
     }
 
+}
 
+/* Estilo FOOTER el pie de página con altura fija */
+footer {
+    background:black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    bottom: 0;
+    margin: 1px;
+   
+}
+
+footer p {
+    color: white; /* Cambia este valor al color que desees */
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
 }

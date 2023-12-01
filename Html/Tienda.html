@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/EstiloTienda.css">
+    <title>FULBO</title>
+</head>
+
+<body>
+    <header>
+       <!-- Logo de la pagina -->
+       <img src="../Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
+        
+       <!-- Icono de la red social -->
+        <div class="container-boton ">
+            <a href="https://www.instagram.com/fulbourbanstyle/" target="_blank">
+                <img class="boton" src="../Imagenes/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="IG" width="50" height="50">
+            </a>
+        </div>
+                
+    </header>    
+       
+    <!-- Barra de navegacion horizontal -->
+    <div class="nav">
+        <ul>
+            <li><a href="../Html/Home.html">Inicio</a></li> 
+            <li><a href="../Html/Busca-equipo.html">Buscá equipo</a></li>
+            <li><a href="../Html/Busca-cancha.html">Buscá cancha</a></li>
+            <li><a href="../Html/Tienda.html">Tienda</a></li>
+            <li><a href="../Html/Contacto.html">Contacto</a></li> 
+        </ul>  
+    </div>
+    
+    <main>
+
+        <div class="contenedor-productos">
+            <div class="producto">
+                <img class="producto-imagen" src="../Imagenes/castolo-back1-e9db9c38a97a4fe37216836407002737-1024-1024.webp" alt="Remera 1">
+                <div class="producto-detalles">
+                    <h3 class="producto-titulo">Remera Castolo</h3>
+                    <p class="producto-precio">$6500</p>
+                    <button class="product-agregar">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <img class="producto-imagen" src="../Imagenes/diez-11-1db8ef6a3b4992842d16754498451253-1024-1024.webp" alt="Remera 2">
+                <div class="producto-detalles">
+                    <h3 class="producto-titulo">Remera 10</h3>
+                    <p class="producto-precio">$6500</p>
+                    <button class="product-agregar">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <img class="producto-imagen" src="../Imagenes/fulbo-11-df79b8d1863050743b16739050812295-1024-1024.webp"Remera 3">
+                <div class="producto-detalles">
+                    <h3 class="producto-titulo">Remera Fulbo</h3>
+                    <p class="producto-precio">$6500</p>
+                    <button class="product-agregar">Añadir al carrito</button>
+                </div>
+            </div><div class="producto">
+                <img class="producto-imagen" src="../Imagenes/fulbo1-5cd2737bef6f0e2b1316734634048613-1024-1024.webp" alt="Remera 4">
+                <div class="producto-detalles">
+                    <h3 class="producto-titulo">Remera Fulbo</h3>
+                    <p class="producto-precio">$6500</p>
+                    <button class="product-agregar">Añadir al carrito</button>
+                </div>
+            </div><div class="producto">
+                <img class="producto-imagen" src="../Imagenes/pelota-front1-9057aa23e467b188c216836406635693-1024-1024.webp" alt="Remera 5">
+                <div class="producto-detalles">
+                    <h3 class="producto-titulo">Pelota Copa</h3>
+                    <p class="producto-precio">$6500</p>
+                    <button class="product-agregar">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <img class="producto-imagen" src="../Imagenes/tango-front1-67d546da58a854fb3e16836405502702-1024-1024.webp" alt="Remera 6">
+                <div class="producto-detalles">
+                    <h3 class="producto-titulo">Pelota Tango</h3>
+                    <p class="producto-precio">$6500</p>
+                    <button class="product-agregar">Añadir al carrito</button>
+                </div>
+    </main>
+
+    <script>
+        // Funcion para direccionar a otra pagina
+        const logo = document.getElementById('logo');
+        logo.addEventListener('click', function() {
+        window.location.href = '../Html/Home.html'; // Redirecciona al usuario a inicio.html
+        });    
+    </script>
+
+<!-- FOOTER -->
+<footer>
+    <p>Derechos de autor © 2023 Fulbo</p>
+</footer>
+</body>
+</html>    

@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="EstiloContacto.css">
+    <link rel="stylesheet" href="../Css/EstiloContacto.css">
     <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css">
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="ValidacionContacto.js" defer></script>
+    <script src="../Js/ValidacionContacto.js" defer></script>
     <title>Pagina de Contacto</title>
 </head>
+
 <body>
     <header>
-       <!-- Logo de la pagina 00-->
-       <img src="Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
+       <!-- Logo de la pagina -->
+       <img src="../Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
         
        <!-- Icono de la red social -->
         <div class="container-boton ">
             <a href="https://www.instagram.com/fulbourbanstyle/" target="_blank">
-                <img class="boton" src="Imagenes/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="IG" width="50" height="50">
+                <img class="boton" src="../Imagenes/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="IG" width="50" height="50">
             </a>
         </div>
                 
@@ -26,13 +27,13 @@
         
    
     <div class="nav">
-        <!-- Panel de navegacion --> 
+        <!-- Barra de navegacion horizontal --> 
             <ul>
-                <li><a href="Home.html">Inicio</a> </li> 
-                <li><a href="Busca-equipo.html">Buscá equipo</a></li>
-                <li><a href="Busca-cancha.html">Buscá cancha</a></li>
-                <li><a href="Tienda.html">Tienda</a></li>
-                <li><a href="Contacto.html">Contacto</a></li> 
+                <li><a href="../Html/Home.html">Inicio</a></li> 
+                <li><a href="../Html/Busca-equipo.html">Buscá equipo</a></li>
+                <li><a href="../Html/Busca-cancha.html">Buscá cancha</a></li>
+                <li><a href="../Html/Tienda.html">Tienda</a></li>
+                <li><a href="../Html/Contacto.html">Contacto</a></li> 
           </ul>  
            
         </div>
@@ -68,10 +69,11 @@
                 <div contenteditable="true" id="apellido" class="required" placeholder="Ingresa tu apellido..."></div>
                 <div id="mensajeApellido" class="mensaje-validacion"></div>
     
-                <label for="email">Correo Electrónico<sup style="color: red;">*</sup></label>
-                <div contenteditable="true" id="email" class="required" placeholder="Ingresa tu correo..."></div>
-                <div id="mensajeEmail" class="mensaje-validacion"></div>
+                <label for="correo">Correo Electrónico<sup style="color: red;">*</sup></label>
+                <div contenteditable="true" id="correo" class="required" placeholder="Ingresa tu correo..."></div>
+                <div id="mensajeCorreo" class="mensaje-validacion"></div>
     
+
                 <label for="telefono">Teléfono<sup style="color: red;">*</sup></label>
                 <div contenteditable="true" id="telefono" class="required" placeholder="Ingresa tu teléfono..."></div>
                 <div id="mensajeTelefono" class="mensaje-validacion"></div>
@@ -88,9 +90,11 @@
         // Funcion para direccionar a otra pagina
         const logo = document.getElementById('logo');
         logo.addEventListener('click', function() {
-            window.location.href = 'Home.html'; // Redirecciona al usuario a inicio.html
+            window.location.href = '../Html/Home.html'; // Redirecciona al usuario a inicio.html
         });     
     </script>
+
+<!-- FOOTER -->
 <footer>
    <p>Derechos de autor © 2023 Fulbo</p>
 </footer>

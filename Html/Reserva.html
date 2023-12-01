@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="EstiloReserva.css">
+    <link rel="stylesheet" href="../Css/EstiloReserva.css">
     <title>Reserva</title>
     <header>
-        <!-- Logo de la pagina 00-->
-        <img src="Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
+        <!-- Logo de la pagina -->
+        <img src="../Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
         
         <!-- Icono de la red social -->
        <div class="container-boton ">
             <a href="https://www.instagram.com/fulbourbanstyle/" target="_blank">
-                <img class="boton" src="Imagenes/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="IG" width="50" height="50">
+                <img class="boton" src="../Imagenes/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="IG" width="50" height="50">
             </a>
         </div>
                 
     </header>
     
+     <!-- Barra de navegacion horizontal -->
     <div class="nav">
         <ul>
-            <li><a href="Home.html">Inicio</a></li> 
-            <li><a href="Busca-equipo.html">Buscá equipo</a></li>
-            <li><a href="Busca-cancha.html">Buscá cancha</a></li>
-            <li><a href="Tienda.html">Tienda</a></li>
-            <li><a href="Contacto.html">Contacto</a></li> 
+            <li><a href="../Html/Home.html">Inicio</a></li> 
+            <li><a href="../Html/Busca-equipo.html">Buscá equipo</a></li>
+            <li><a href="../Html/Busca-cancha.html">Buscá cancha</a></li>
+            <li><a href="../Html/Tienda.html">Tienda</a></li>
+            <li><a href="../Html/Contacto.html">Contacto</a></li> 
         </ul>  
     </div>
 
 </head>
+
 <body>
     <div id="container">
         <header>
             <!-- Primera publicidad -->
-            <img id="futbol-publicidad" src="Imagenes/publicidad1.png">
+            <img id="futbol-publicidad" src="../Imagenes/publicidad1.png">
             
             <div id="tabs">
                 <a href="ruta_de_novedades.html">Novedades</a>
@@ -45,17 +47,17 @@
         </header>
         <div id="contenido">
              <!-- Segunda publicidad -->
-            <img id="futbol-publicidad2" src="Imagenes/publicidad4.png">
+            <img id="futbol-publicidad2" src="../Imagenes/publicidad4.png">
 
             <div id="contenedor">
                 <div class="izquierdo">
-                    <img id="logoComplejo" src="Imagenes/logo-complejo.png" alt="Logo de cancha">
+                    <img id="logoComplejo" src="../Imagenes/logo-complejo.png" alt="Logo de cancha">
                     <h2 id="titulo">Complejo Fulbo</h2>
                     <p id="mensaje">Me gusta <span style="color: blue;">Facebook</span> Me gusta <span style="color: blue;">Twitter</span></p>
                 </div>
                 <div class="derecho">
                     <h2 id="subtitulo">Bienvenido a la Comunidad</h2>
-                    <p id="mensaje">Hoy se juega Fulbo <a id="login-link" href="login.html">¡¡Ingrese Ya!!</a></p>
+                    <p id="mensaje">Hoy se juega Fulbo <a id="login-link" href="../Html/Login.html">¡¡Ingrese Ya!!</a></p>
                 </div>
             </div>
 
@@ -76,13 +78,13 @@
                 
                 <div id="video-Publicidad">
                     <video id="reservaVideo" autoplay muted controls>
-                        <source src="Imagenes/video1.mp4" type="video/mp4">
+                        <source src="../Imagenes/video1.mp4" type="video/mp4">
                         Tu navegador no soporta la reproducción de videos.
                     </video>       
                 </div>  
 
                 <div id="publicidad3">
-                    <img id="futbol-publicidad3" src="Imagenes/publicidad3.png">
+                    <img id="futbol-publicidad3" src="../Imagenes/publicidad3.png">
                 </div>
             </div>
 
@@ -120,10 +122,12 @@
             // Funcion para direccionar a otra pagina
             const logo = document.getElementById('logo');
             logo.addEventListener('click', function() {
-                window.location.href = 'Home.html'; // Redirecciona al usuario a inicio.html
+                window.location.href = '../Html/Home.html'; // Redirecciona al usuario a inicio.html
             });     
         </script>
     </div>
+
+<!-- FOOTER -->   
 <footer>          
     <p>Derechos de autor © 2023 Fulbo</p>
 </footer> 

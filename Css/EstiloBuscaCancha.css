@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../Imagenes/Cesped.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 4rem;
+} 
+
+/* Estilo HEADER encabezado con altura fija */
+header{
+    background-color:white;
+}
+
+    /*Logo de la pagina que redireccionar a home cuando hacen clip*/
+    #logo{
+        width: 100px;
+        height: 70px;
+        background-size: cover;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    /* Estilos para el botón flotante */
+    .container-boton{
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 15px;
+        right: 20px;
+        padding: 10px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+    }
+
+
+
+/* Estilos para la barra de navegación */
+.nav ul{
+    list-style: none;
+    text-align: center;
+    /* background-color: rgb(5, 4, 2); */
+    background-image: url('../Imagenes/buscacancha.webp');
+    padding: 0%;
+    margin: 0%;
+}
+  
+.nav li{
+    display: inline-block;
+    background-color: #050505;
+    
+}  
+
+.nav a{
+    color: white;
+    text-decoration: double;
+    width: 230px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Contenido*/
+    p{
+        color: rgb(249, 249, 249);
+        size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+    } 
+
+    /* Estilo para el pie de página gris con altura fija */
+
+    h1{
+        font-family: 'Montserrat', sans-serif;;
+        text-align: center;
+        color: white;
+    }
+
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+    }
+
+
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+    }
+
+    h4{
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+    }
+
+    div{
+        text-align: center;
+
+    }
+
+
+
+/* Estilo FOOTER el pie de página con altura fija */
+footer {
+    background:black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    bottom: 0;
+    margin: 1px;
+   
+}
+
+footer p {
+    color: white; /* Cambia este valor al color que desees */
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}

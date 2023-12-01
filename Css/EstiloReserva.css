@@ -5,6 +5,70 @@ body { /* Cuerpo principal del contenido, de color blanco, que queda de fondo*/
     margin-right: 1.8cm;
 }
 
+
+/* Estilo HEADER encabezado con altura fija */
+header{ 
+    background-color: rgba(22, 156, 22, 0.9); /*color de fondo del encabezado*/
+    height: 100px;  
+    text-align: center; 
+    margin: 0%;   
+}
+
+header a { 
+    color: white;  /*color del texto del encabezado y pie de pagina*/
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;   
+}
+
+    /*Logo de la pagina que redireccionar a home cuando hacen clip*/
+    #logo{
+        width: 100px;
+        height: 70px;
+        background-size: cover;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    /* Estilos para el botón flotante */
+    .container-boton{
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 15px;
+        right: 20px;
+        padding: 10px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+    }
+
+/* Estilos para la barra de navegación */
+.nav ul{
+    list-style: none;
+    text-align: center;
+    background-image: url('img/soccer field background 1003.jpg');
+    padding: 0%;
+    margin: 0%;
+}
+  
+.nav li{
+    display: inline-block;
+    background-color: #050505;  
+}  
+
+.nav a{
+    color: white;
+    text-decoration: double;
+    width: 230px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+}
+
+/*Contenido*/
+/*Contenedor publicidad encabezado*/
 #container {
     width: 100%; /* Hace que el contenedor sea del 100% del ancho del viewport */
     margin: auto; /* Centra el contenedor horizontalmente */
@@ -13,32 +77,7 @@ body { /* Cuerpo principal del contenido, de color blanco, que queda de fondo*/
     
 }
 
-header{ 
-    background-color: rgba(22, 156, 22, 0.9); /*color de fondo del encabezado*/
-    height: 100px;  
-    text-align: center; 
-    margin: 0%;   
-}
-
-footer{
-    background-color: rgba(18, 18, 18, 0.9); /*color de fondo del pie de pagina*/
-    padding: 5px; /* Agregamos un relleno al encabezado */
-    height: 60px;  
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-     
-}
-
-
-header a, footer a { 
-    color: white;  /*color del texto del encabezado y pie de pagina*/
-    font-size: 20px;
-    text-decoration: none;
-    padding: 10px;   
-}
-
+/* Contenedor general cuerpo principal */
 #contenido {
     background-color: white;
     height: 1100px; /* Tamaño del contenido */
@@ -78,6 +117,7 @@ header a, footer a {
     border-style: ridge;
 }
 
+/*Contenedor Complejo futbo y comunidad*/
 #contenedor {
     display: flex;
     
@@ -120,15 +160,6 @@ header a, footer a {
 }
 
 
-/*Logo de la pagina que redireccionar a home cuando hacen clip*/
-#logo{
-    width: 100px;
-    height: 70px;
-    background-size: cover;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
 #titulo {           /* Titulo del Complejo lado izquierdo contenedor*/
     font-size: 25px;
     color: rgba(28, 28, 32, 0.9);  
@@ -164,6 +195,8 @@ header a, footer a {
     color: rgb(28, 30, 28); /* Resaltar con color verde */
     font-size: 20px;
 }
+
+/*Contenedor publicidad video*/
 #contenedorVideo {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se coloquen uno debajo del otro en pantallas más pequeñas */
@@ -188,47 +221,28 @@ header a, footer a {
     height: 100%; /* Ajusta la altura al 100% del contenedor */
 }
 
-
-
-
 #tabs { /* barra de titulo en contenedor de la primera publicidad*/
     float: left;
     margin: 0 20px;
     background: #050505;
 }
 
-.nav ul{
-    list-style: none;
+
+
+/* Estilo FOOTER el pie de página con altura fija */
+footer {
+    background:black;
     text-align: center;
-    background-image: url('img/soccer field background 1003.jpg');
-    padding: 0%;
-    margin: 0%;
-}
-  
-.nav li{
-    display: inline-block;
-    background-color: #050505;  
-}  
-
-.nav a{
-    color: white;
-    text-decoration: double;
-    width: 230px;
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    font-family:'Montserrat', sans-serif;
-}
-
-.container-boton{
-
     position: fixed;
-    z-index: 999;
-    border-radius: 50%;
-    bottom: 15px;
-    right: 20px;
-    padding: 10px;
-    transition: ease 0.3s;
-    animation: efecto 1.2s infinite;
+    width: 100%;
+    height: 7%;
+    bottom: 0;
+    margin: 1px;
+   
+}
+
+footer p {
+    color: white; /* Cambia este valor al color que desees */
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
 }

@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="EstiloBuscaEquipo.css">
-    <script src="ValidacionBuscaEquipo.js" defer></script>
+    <link rel="stylesheet" href="../Css/EstiloBuscaEquipo.css">
+    <script src="../Js/ValidacionBuscaEquipo.js" defer></script>
 </head>
 <body>
     <header>
         <!-- Logo de la pagina 00-->
-        <img src="Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
+        <img src="../Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
         
         <!-- Icono de la red social -->
         <div class="container-boton ">
             <a href="https://www.instagram.com/fulbourbanstyle/" target="_blank">
-                <img class="boton" src="Imagenes/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="IG" width="50" height="50">
+                <img class="boton" src="../Imagenes/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="IG" width="50" height="50">
             </a>
         </div>
                 
     </header>    
-        
+    
+     <!-- Barra de navegacion horizontal --> 
     <div class="nav">
         <ul>
-            <li><a href="Home.html">Inicio</a></li> 
-            <li><a href="Busca-equipo.html">Buscá equipo</a></li>
-            <li><a href="Busca-cancha.html">Buscá cancha</a></li>
-            <li><a href="Tienda.html">Tienda</a></li>
-            <li><a href="Contacto.html">Contacto</a></li> 
+            <li><a href="../Html/Home.html">Inicio</a></li> 
+            <li><a href="../Html/Busca-equipo.html">Buscá equipo</a></li>
+            <li><a href="../Html/Busca-cancha.html">Buscá cancha</a></li>
+            <li><a href="../Html/Tienda.html">Tienda</a></li>
+            <li><a href="../Html/Contacto.html">Contacto</a></li> 
         </ul>  
     </div>
     <h2>¡Te tiramos un centro! </h2>
@@ -48,7 +49,7 @@
 
         <label for="correo">Correo Electrónico<sup style="color: red;">*</sup></label>
         <div contenteditable="true" id="correo" class="required" placeholder="Ingresa tu correo..."></div>
-        <div id="mensajeEmail" class="mensaje-validacion"></div>
+        <div id="mensajeCorreo" class="mensaje-validacion"></div>
 
         <label for="telefono">Teléfono<sup style="color: red;">*</sup></label>
         <div contenteditable="true" id="telefono" class="required" placeholder="Ingresa tu teléfono..."></div>
@@ -68,11 +69,13 @@
     <script>
         const logo = document.getElementById('logo');
         logo.addEventListener('click', function() {
-        window.location.href = 'Home.html'; // Redirecciona al usuario a inicio.html
+        window.location.href = '../Html/Home.html'; // Redirecciona al usuario a inicio.html
         });
     </script>
-    <footer>
-        <p>Derechos de autor © 2023 Fulbo</p>
-    </footer>
+
+<!-- FOOTER -->
+<footer>
+    <p>Derechos de autor © 2023 Fulbo</p>
+</footer>
 </body>
 </html>        

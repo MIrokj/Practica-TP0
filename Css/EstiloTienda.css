@@ -1,0 +1,133 @@
+body{
+    background-image: url(../Imagenes/Cesped.jpg);
+    
+}
+
+/* Estilo HEADER encabezado con altura fija */
+header{
+    background-color: white;
+    
+}
+
+    /*Logo de la pagina que redireccionar a home */
+    #logo{
+        width: 100px;
+        height: 70px;
+        background-size: cover;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    /* Estilos para el botón flotante */
+    .container-boton{
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 15px;
+        right: 20px;
+        padding: 10px;
+    }
+
+
+/* Estilos para la barra de navegación */
+.nav ul{
+    list-style: none;
+    text-align: center;
+    /* background-color: rgb(5, 4, 2); */
+    background-image: url('img/soccer field background 1003.jpg');
+    padding: 0%;
+    margin: 0%;
+}
+  
+.nav li{
+    display: inline-block;
+    background-color: #050505;   
+}  
+
+.nav a{
+    color: white;
+    text-decoration: double;
+    width: 230px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Main*/
+/*Contenedores de todos productos*/
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-bottom: 4rem;
+    margin-top: 2rem;    
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.producto-imagen{
+    max-width: 100%;  
+    border-radius: 1rem;  
+}
+
+.producto-detalles{
+    background-color: rgb(2, 126, 2);
+    padding: 1rem;
+    border-radius: 1rem;
+    border-top: -1rem;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+    .producto-titulo{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .product-agregar{
+        font-family: 'Montserrat', sans-serif;
+        border: 0;
+        padding: 1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 1rem;
+    }
+
+    .producto-precio{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .producto-agregar:hover{
+        background-color: black;
+        
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;   
+    }
+
+
+
+/* Estilo FOOTER el pie de página con altura fija */
+footer {
+    background:black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    bottom: 0;
+    margin: 1px;
+}
+
+footer p {
+    color: white; /* Cambia este valor al color que desees */
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}

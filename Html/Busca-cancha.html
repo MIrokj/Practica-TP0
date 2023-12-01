@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     
     <title>¿DONDE JUEGO?</title>
-    <link rel="stylesheet" href="EstiloBuscaCancha.css">
+    <link rel="stylesheet" href="../Css/EstiloBuscaCancha.css">
 </head>
 <body>
     <header>
-        <!-- Logo de la pagina 00-->
-        <img src="Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
+        <!-- Logo de la pagina -->
+        <img src="../Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
         
         <!-- Icono de la red social -->
         <div class="container-boton ">
             <a href="https://www.instagram.com/fulbourbanstyle/" target="_blank">
-                <img class="boton" src="Imagenes/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="IG" width="50" height="50">
+                <img class="boton" src="../Imagenes/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="IG" width="50" height="50">
             </a>
         </div>
                 
     </header>     
         
+    <!-- Barra de navegacion horizontal -->
     <div class="nav">
         <ul>
-            <li><a href="Home.html">Inicio</a></li> 
-            <li><a href="Busca-equipo.html">Buscá equipo</a></li>
-            <li><a href="Busca-cancha.html">Buscá cancha</a></li>
-            <li><a href="Tienda.html">Tienda</a></li>
-            <li><a href="Contacto.html">Contacto</a></li> 
+            <li><a href="../Html/Home.html">Inicio</a></li> 
+            <li><a href="../Html/Busca-equipo.html">Buscá equipo</a></li>
+            <li><a href="../Html/Busca-cancha.html">Buscá cancha</a></li>
+            <li><a href="../Html/Tienda.html">Tienda</a></li>
+            <li><a href="../Html/Contacto.html">Contacto</a></li> 
         </ul>  
     </div>
 
@@ -56,9 +57,6 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13145.116738220657!2d-58.487852999999994!3d-34.546486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6c049b27a89%3A0xb4aff81f5c83b76b!2sDot%20Baires%20Shopping!5e0!3m2!1ses!2sar!4v1698166312592!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div> 
 
-
-
-
     <h4>NORDELTA</h4>
 
     <p>Av. Sta. María de las Conchas 4711, B1624 Tigre, Provincia de Buenos Aires</p>
@@ -72,9 +70,11 @@
         // Funcion para direccionar a otra pagina
         const logo = document.getElementById('logo');
         logo.addEventListener('click', function() {
-        window.location.href = 'Home.html'; // Redirecciona al usuario a inicio.html
+        window.location.href = '../Html/Home.html'; // Redirecciona al usuario a inicio.html
         }); 
     </script>
+
+<!-- FOOTER -->
 <footer>
     <p>Derechos de autor © 2023 Fulbo</p>
 </footer>
