@@ -62,7 +62,7 @@ header{
 
 /* Estilos generales para la sección principal del contenido */
 section {
-    height: 500px;
+    height: 465px;
     display: flex;
     margin: 2% auto;
 }
@@ -75,8 +75,10 @@ section {
     transform: translate(-50%, -50%);
     width: 90%; /* Ajustar según sea necesario */
     max-width: 1168px; /* Ajustar según sea necesario */
+    
     background: green;
     box-shadow: 0 25px 30px rgba(14, 13, 13, 0.5); 
+    margin-top: 40px;
 }
 
 /* Estilos responsivos para el primer contenedor de texto */
@@ -105,11 +107,12 @@ section {
 /* Estilos contenedor para la imagen */
 .imagen {
     width: 100%; /* 2 imágenes por fila en pantallas más grandes */
+    height: 20%;
 }
 
 .imagen img {
-    max-width: 100%; /* Hacer la imagen responsiva */
-    height: auto;
+    width: 100%; /* Hacer la imagen responsiva */
+    height: 500%;
 }
 
 
