@@ -1,7 +1,7 @@
 body {
     margin: 0%;
     font-family: Arial, sans-serif;
-    background-image: url(../Imagenes/FOOTBALL-RIVALS-FRIENDS-B2.jpg);
+    background-image: url(Imagenes/FOOTBALL-RIVALS-FRIENDS-B2.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -42,7 +42,7 @@ header{
     text-align: center;
     padding: 0;
     margin: 0;
-    background-image: url('../Imagenes/img5.png');
+    background-image: url('Imagenes/img5.png');
 }
   
 .nav li{
