@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/EstiloHome.css">
+</head>
+<body>
+    <header>
+        <!-- Logo de la pagina 00-->
+        <img src="../Imagenes/Logo FULBO.png" alt="Logo de tu sitio" id="logo">
+        
+        <!-- Icono de la red social -->
+        <div class="container-boton ">
+            <a href="https://www.instagram.com/fulbourbanstyle/" target="_blank">
+                <img class="boton" src="../Imagenes/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="IG" width="50" height="50">
+            </a>
+        </div>            
+    </header>    
+        
+    <!-- Barra de navegacion horizontal -->
+    <div class="nav">
+        
+        <ul>
+            <li><a href="../Html/Home.html">Inicio</a></li> 
+            <li><a href="../Html/Busca-equipo.html">Buscá equipo</a></li>
+            <li><a href="../Html/Busca-cancha.html">Buscá cancha</a></li>
+            <li><a href="../Html/Tienda.html">Tienda</a></li>
+            <li><a href="../Html/Contacto.html">Contacto</a></li> 
+        </ul>  
+    </div>
+   
+    <main>
+        <section>      
+            <!-- Contenedor de texto del lado izquierdo-->
+            <div class="contenedorTexto">
+                            
+                <h1 class = "titulo1">¿Jugamos?</h1>
+                <h2 class = "titulo2">FULBO</h2>
+                <h3 class= "frase">La mejor manera de RESERVAR tu cancha</h3>
+                <a class="boton1" href="../Html/Reserva.html">RESERVAR</a>
+                <a class="boton2" href="../Html/Contacto.html" >CONTACTO</a>
+            </div>
+                
+            <div class="contenedorImagen">
+                <!-- Contenedor de imagen del carrusel dinamico -->
+                <div class="imagen">
+                    <img src="../Imagenes/img1.png" alt="Imagen 1">
+                    <a class="boton-sesion" href="../Html/Login.html">Inicio Sesion</a>
+                </div>
+                <div class="imagen">
+                    <img src="../Imagenes/img2.png" alt="Imagen 2">
+                    <a class="boton-sesion" href="../Html/Login.html">Inicio Sesion</a>
+                </div>
+                <div class="imagen">
+                    <img src="../Imagenes/img3.png" alt="Imagen 3">
+                    <a class="boton-sesion" href="../Html/Login.html">Inicio Sesion</a>
+                </div>    
+                <div class="imagen">
+                    <img src="../Imagenes/img4.png" alt="Imagen 4">
+                    <a class="boton-sesion" href="../Html/Login.html">Inicio Sesion</a>
+                </div>                                         
+            </div>
+
+            <script> 
+                <!-- Metodo para mostrar imagenes en carrusel -->
+                let indice = 0;
+                    
+                    function mostrarimg() {
+                        let i;
+                        let imagenes = document.getElementsByClassName("imagen");
+                        for (i = 0; i < imagenes.length; i++) {
+                            imagenes[i].style.display = "none";
+                        }
+                        indice++;
+                        if (indice > imagenes.length) {
+                            indice = 1;
+                        }
+                        imagenes[indice - 1].style.display = "block";
+                        setTimeout(mostrarimg, 5000); // Cambiar cada 5 segundos
+                    }
+                    mostrarimg();     
+            </script>
+            <script>
+                // Funcion para direccionar a otra pagina
+                const logo = document.getElementById('logo');
+                logo.addEventListener('click', function() {
+                    window.location.href = '../Html/Home.html'; // Redirecciona al usuario a inicio.html
+                });     
+            </script>
+        </section>
+    </main>
+    
+    <!-- FOOTER-->
+    <footer>
+        <p>Derechos de autor © 2023 Fulbo</p>
+    </footer>
+
+</body>
+
+</html>    
